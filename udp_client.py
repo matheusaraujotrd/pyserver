@@ -11,16 +11,15 @@ def main():
     print("Socket criado.")
 
     host = "localhost"
-    port = 5433
     msg = "Testing successful"
 
     try:
-        print("Cliente:" + msg)
+        print("Cliente: " + msg)
         connection.sendto(msg.encode(), (host, 5432))
 
         data, server = connection.recvfrom(4096)
         data = data.decode()
-        print("Recebido: " + data)
+
     except socket.error as udp_connection_error:
         print("A conexão TCP falhou")
         print(f"Erro {udp_connection_error}")
@@ -28,3 +27,7 @@ def main():
     finally:
         connection.close()
         print("Encerrando conexão UDP.")
+
+
+if __name__ == "__main__":
+    main()
