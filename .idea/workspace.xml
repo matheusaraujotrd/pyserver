@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e78ef95-f87f-4d5a-879e-53a6454f7ad2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tcp_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udp_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udp_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udp_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/udp_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udp_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/udp_server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +27,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2YEi3kRxQooi72QTrYrufym4WHH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -41,7 +41,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/tcp__client"
+    "git-widget-placeholder": "feature/udp__refactor"
   }
 }]]></component>
   <component name="RecentsManager">
