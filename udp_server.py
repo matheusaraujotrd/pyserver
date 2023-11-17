@@ -7,14 +7,14 @@ def main():
     host = "localhost"
     port = 5432
     connection.bind((host, port))
-    msg = "\nServidor: Bem-vindo(a)!"
+    msg = "\nServidor: Mensagem enviada pelo servidor"
     while 1:
         data, end = connection.recvfrom(4096)
         if data:
             print("Servidor enviando mensagem...")
-            data_dec = data.decode()
-            print(f"Received: {data_dec}")
+            data = data.decode()
             connection.sendto((msg.encode()), end)
+            print(f"{data}" + msg)
 
 
 if __name__ == "__main__":

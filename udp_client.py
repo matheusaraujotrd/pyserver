@@ -1,6 +1,6 @@
 import socket
 import sys
-
+import udp_server
 
 def main():
     try:
@@ -11,12 +11,10 @@ def main():
     print("Socket criado.")
 
     host = "localhost"
-    msg = "Testing successful"
+    msg = "Cliente: Mensagem enviada pelo cliente"
 
     try:
-        print("Cliente: " + msg)
         connection.sendto(msg.encode(), (host, 5432))
-
         data, server = connection.recvfrom(4096)
         data = data.decode()
 
@@ -25,6 +23,7 @@ def main():
         print(f"Erro {udp_connection_error}")
         sys.exit()
     finally:
+        print(data)
         connection.close()
         print("Encerrando conexão UDP.")
 
